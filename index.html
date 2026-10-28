@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+/* Safe fetch shim for preview iframe environment */
+(function() {
+    try {
+        var _originalFetch = window.fetch ? window.fetch.bind(window) : null;
+        var _currentFetch = _originalFetch;
+        Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() {
+                return _currentFetch;
+            },
+            set: function(fn) {
+                _currentFetch = fn;
+            }
+        });
+    } catch (e) {
+        try {
+            var _protoFetch = Window.prototype.fetch;
+            var _currentProtoFetch = _protoFetch;
+            Object.defineProperty(Window.prototype, 'fetch', {
+                configurable: true,
+                enumerable: true,
+                get: function() {
+                    return _currentProtoFetch;
+                },
+                set: function(fn) {
+                    _currentProtoFetch = fn;
+                }
+            });
+        } catch (err) {}
+    }
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Velvet Bean Café — Coffee. Conversations. Moments.</title>
+
+<meta name="description" content="Velvet Bean Café — premium coffee, handcrafted desserts and memorable moments.">
+<meta property="og:title" content="Velvet Bean Café — Coffee. Conversations. Moments.">
+<meta property="og:description" content="Velvet Bean Café — premium coffee, handcrafted desserts and memorable moments.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

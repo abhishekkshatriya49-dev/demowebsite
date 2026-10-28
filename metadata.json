@@ -1,0 +1,8 @@
+{
+  "name": "Velvet Bean Café",
+  "description": "Velvet Bean Café — premium coffee, handcrafted desserts and memorable moments.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

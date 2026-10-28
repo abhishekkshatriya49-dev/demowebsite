@@ -1,11 +1,19 @@
-<div align="center">
+# Velvet Bean Café
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A modern, responsive React and TypeScript web application for Velvet Bean Café — showcasing handcrafted coffee, artisanal bites, and café atmosphere.
 
-  <h1>Built with AI Studio</h2>
+## Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Cinematic Scroll-Controlled Video Hero**: High-performance scroll playback synchronized with sticky viewport transitions and responsive typography animation.
+- **Atmospheric Story & Experience**: Café background story with floating animated shine-border badges and hallmark features.
+- **Interactive Menu**: Category-based menu filtering (Coffee, Cold Drinks, Food, Desserts) with live state switching and pricing.
+- **Café Favorites & Gallery**: Showcase grid of signature specialties and café photography with interactive hover scaling.
+- **Guest Reviews**: Curated customer testimonials with star ratings and contributor profiles.
+- **Location & Opening Hours**: Detailed café hours and location highlights for Nashik, Maharashtra.
+- **Responsive Design & Accessibility**: Fully optimized for mobile, tablet, and desktop screens with prefers-reduced-motion accommodations.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Tech Stack
 
-</div>
+- **Framework**: React 19 + TypeScript
+- **Bundler & Dev Server**: Vite
+- **Styling**: Modern CSS3 with custom variables, smooth shine gradients, and subtle noise grain overlays
